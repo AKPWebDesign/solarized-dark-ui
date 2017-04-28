@@ -2,16 +2,38 @@
 @import "ui-mixins";
 
 .loading-spinner(@size) {
+  background: none;
+  background-color: @background-color-info;
+  color: @text-color-highlight;
   width: @size;
   height: @size;
+  font-size: @size * 0.75;
+  line-height: @size * 0.95;
   display: block;
-
-  background-image: url(images/octocat-spinner-128.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: @component-border-radius;
+  overflow-x: visible;
 
   &.inline-block {
     display: inline-block;
+  }
+
+  &::before {
+    content: '{';
+    display: block;
+    width: @size/2;
+    animation: pulse 0.5s alternate infinite ease-in-out;
+    float: left;
+  }
+
+  &::after {
+    content: '}';
+    display: block;
+    width: @size/2;
+    animation: pulse 0.5s alternate infinite ease-in-out;
+    animation-delay: 0.5s;
+    float: left;
   }
 }
 
@@ -73,4 +95,11 @@ progress[value]::-webkit-progress-bar {
 
 @-webkit-keyframes animate-stripes {
    100% { background-position: 100px 0px; }
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(0.7);
+    opacity: 0.3;
+  }
 }

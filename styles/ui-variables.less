@@ -3,76 +3,76 @@
 // Colors
 
 @text-color: @base00;
-@text-color-subtle: @base1;
-@text-color-highlight: @base1;
-@text-color-selected: @base01;
+@text-color-subtle: @base01;
+@text-color-highlight: @base3;
+@text-color-selected: @base1;
 
-@text-color-info: @base00;
+@text-color-info: @blue;
 @text-color-success: @green;
 @text-color-warning: @yellow;
-@text-color-error: @orange;
+@text-color-error: @red;
 
-@text-color-ignored: @text-color-subtle;
-@text-color-added: @text-color-success;
-@text-color-renamed: @text-color-info;
-@text-color-modified: @text-color-warning;
-@text-color-removed: @text-color-error;
+@text-color-ignored: @base01;
+@text-color-added: @green;
+@text-color-renamed: @yellow;
+@text-color-modified: @yellow;
+@text-color-removed: @red;
 
-@background-color-info: #0098ff;
-@background-color-success: #17ca65;
-@background-color-warning: #ffaa2c;
-@background-color-error: #c00;
-@background-color-highlight: rgba(255, 255, 255, 0.07);
-@background-color-selected: #082933;
+@background-color-info: @blue;
+@background-color-success: @green;
+@background-color-warning: @yellow;
+@background-color-error: @red;
+@background-color-highlight: @base1;
+@background-color-selected: @base03;
 
-@tree-background-color: #00212b;
+@tree-background-color: @base03;
 
 @app-background-color: @base03;
 
-@base-background-color: lighten(@tool-panel-background-color, 5%);
-@base-border-color: rgba(0, 0, 0, 0.5);
+@base-background-color: @base02;
+@base-border-color: @base01;
 
-@pane-item-background-color: @base-background-color;
-@pane-item-border-color: rgba(0, 0, 0, 0.5);
+@pane-item-background-color: @base02;
+@pane-item-border-color: @base01;
 
-@input-background-color: @base02;
-@input-border-color: @base-border-color;
+@input-background-color: @base03;
+@input-border-color: @base01;
 
-@tool-panel-background-color: #00212b;
-@tool-panel-border-color: transparent;
+@tool-panel-background-color: @base03;
+@tool-panel-border-color: @base03;
 
-@inset-panel-background-color: #1a1e24;
-@inset-panel-border-color: @base-border-color;
+@inset-panel-background-color: @base03;
+@inset-panel-border-color: @base01;
 
-@panel-heading-background-color: #43484d;
-@panel-heading-border-color: fadein(@base-border-color, 10%);
+@panel-heading-background-color: @base02;
+@panel-heading-border-color: @base01;
 
-@overlay-background-color: @tool-panel-background-color;
-@overlay-border-color: @background-color-highlight;
+@overlay-background-color: @base03;
+@overlay-border-color: @base01;
 
-@button-background-color: @base02;
+@button-background-color: @base03;
 @button-background-color-hover: @base02;
-@button-background-color-selected: @base02;
-@button-border-color: transparent;
+@button-background-color-selected: @base00;
+@button-border-color: @base01;
 
 @tab-bar-background-color: @base03;
 @tab-bar-border-color: transparent;
 @tab-background-color: transparent;
-@tab-background-color-active: #294a55;
-@tab-border-color: @tool-panel-background-color;
-@tab-border-color-active: #3f616b;
+@tab-background-color-active: @base01;
+@tab-border-color: @base03;
+@tab-border-color-active: @base01;
 
-@tree-view-background-color: @tool-panel-background-color;
-@tree-view-border-color: @tool-panel-border-color;
+@tree-view-background-color: @base03;
+@tree-view-border-color: @base03;
 
 @scroll-background: @base03;
-@scroll-thumb: @overlay-border-color;
+@scroll-thumb: @base1;
 
-@ui-site-color-1: @background-color-success; // green
-@ui-site-color-2: @background-color-info; // blue
-@ui-site-color-3: @background-color-warning; // orange
-@ui-site-color-4: #db2ff4; // purple
-@ui-site-color-5: #f5e11d; // yellow
+@ui-site-color-1: @green;
+@ui-site-color-2: @blue;
+@ui-site-color-3: @red;
+@ui-site-color-4: @magenta;
+@ui-site-color-5: @yellow;
 
 
 // Sizes
@@ -85,11 +85,11 @@
 @component-icon-padding: 5px;
 @component-icon-size: 16px;
 @component-line-height: 25px;
-@component-border-radius: 2px;
+@component-border-radius: 4px;
 
 @tab-height: 36px;
 
 
 // Other
 
-@font-family: 'Lucida Grande', 'Segoe UI', sans-serif;
+@font-family: 'Roboto Mono', 'Inconsolata', monospace;
