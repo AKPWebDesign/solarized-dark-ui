@@ -1,9 +1,10 @@
 {
-  "name": "solarized-dark-ui",
+  "name": "clean-solarized-dark-ui",
   "theme": "ui",
   "version": "1.0.0",
   "description": "Solarized Dark UI theme for Atom",
   "license": "MIT",
+  "author": "Austin Peterson <austin@akpwebdesign.com> (https://blog.akpwebdesign.com)",
   "repository": "https://github.com/AKPWebDesign/solarized-dark-ui",
   "engines": {
     "atom": ">0.50.0"
